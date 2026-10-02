@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datenschutzerklärung der TOS Livestream Automation">
+    <title>Datenschutzerklärung – TOS Livestream Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TOS <span>Livestream Automation</span></h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="datenschutz.html" class="active">Datenschutz</a>
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Datenschutzerklärung</h2>
+            <p class="muted">Stand: Oktober 2026</p>
+
+            <h3>1. Verantwortliche Stelle</h3>
+            <p>
+                Verantwortlich für die Datenverarbeitung im Rahmen dieser Anwendung ist:<br>
+                <!-- TODO: Vor dem Veröffentlichen ausfüllen -->
+                Max Streamer<br>
+                Musterstraße 1<br>
+                12345 Musterstadt<br>
+                E-Mail: <a href="mailto:streamertos@gmail.com">streamertos@gmail.com</a>
+            </p>
+
+            <h3>2. Zweck der Anwendung</h3>
+            <p>
+                Die TOS Livestream Automation ist ein lokales Automatisierungswerkzeug. Sie erstellt und
+                verwaltet geplante YouTube-Livestreams (Live-Broadcasts, Live-Streams, Thumbnails,
+                Live-Chat-Einstellungen) auf den eigenen YouTube-Kanälen des Betreibers und schreibt
+                die erzeugten Video-IDs in eine eigene Google-Sheets-Tabelle. Die Anwendung wird
+                ausschließlich vom Betreiber selbst genutzt.
+            </p>
+
+            <h3>3. Welche Google-Nutzerdaten werden verarbeitet?</h3>
+            <p>Die Anwendung greift über die Google-APIs ausschließlich auf Daten der eigenen Konten zu:</p>
+            <ul>
+                <li><strong>YouTube Data API v3</strong> (Scopes <code>youtube.force-ssl</code>, <code>youtube.upload</code>):
+                    Kanal-Informationen des eigenen Kanals, Erstellung und Verwaltung von Live-Broadcasts
+                    und Live-Streams, Upload von Thumbnail-Bildern</li>
+                <li><strong>Google Sheets API</strong> (Scope <code>spreadsheets</code>):
+                    Lese- und Schreibzugriff auf eine einzelne, vom Betreiber festgelegte Tabelle
+                    (Speicherung von Video-IDs und Sendezeiten)</li>
+            </ul>
+            <p>
+                Es werden <strong>keine</strong> Daten anderer Google-Nutzer erhoben, gelesen oder gespeichert.
+            </p>
+
+            <h3>4. Speicherung und Aufbewahrung</h3>
+            <p>
+                Sämtliche Verarbeitung erfolgt <strong>lokal auf dem Rechner des Betreibers</strong>.
+                Die Anwendung betreibt keinen Server und überträgt keine Daten an Dritte.
+                Im Einzelnen werden lokal gespeichert:
+            </p>
+            <ul>
+                <li>OAuth-Zugriffs- und Refresh-Tokens (<code>token.json</code>, <code>token_secondary.json</code>) zur Anmeldung bei den Google-APIs</li>
+                <li>Lokale Excel-Dateien mit Sendeplanung und Video-IDs</li>
+                <li>Lokale Protokolldateien (Logs) zur Fehleranalyse</li>
+            </ul>
+            <p>
+                Eine Weitergabe, der Verkauf oder die Nutzung der Daten für Werbung oder andere
+                Zwecke findet <strong>nicht</strong> statt.
+            </p>
+
+            <h3>5. Einhaltung der Google API Services User Data Policy</h3>
+            <p>
+                Die Nutzung der über Google-APIs erhaltenen Informationen durch diese Anwendung erfolgt
+                in Übereinstimmung mit der
+                <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>
+                einschließlich der Anforderungen der eingeschränkten Nutzung (Limited Use):
+            </p>
+            <ul>
+                <li>Daten werden nur für den beschriebenen Zweck (Planung eigener Livestreams) verwendet</li>
+                <li>Keine Übertragung an Dritte, keine Nutzung für Werbung, kein Profiling</li>
+                <li>Keine Einsichtnahme durch Menschen, außer zur Fehlerbehebung durch den Betreiber selbst</li>
+            </ul>
+
+            <h3>6. Widerruf und Löschung</h3>
+            <p>
+                Du kannst der Anwendung den Zugriff jederzeit entziehen:
+            </p>
+            <ul>
+                <li>In den Google-Kontoeinstellungen unter
+                    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>
+                    den Zugriff der App widerrufen</li>
+                <li>Die lokalen Token-Dateien (<code>token.json</code>, <code>token_secondary.json</code>) löschen –
+                    danach besitzt die Anwendung keinen Zugriff mehr</li>
+            </ul>
+            <p>
+                Da alle Daten ausschließlich lokal gespeichert werden, ist mit dem Löschen der lokalen
+                Dateien sämtliche gespeicherte Information entfernt.
+            </p>
+
+            <h3>7. Keine Cookies, kein Tracking</h3>
+            <p>
+                Diese Website und die Anwendung verwenden keine Cookies, keine Analyse-Werkzeuge
+                (z. B. Google Analytics) und keinerlei Tracking-Technologien.
+            </p>
+
+            <h3>8. Änderungen dieser Erklärung</h3>
+            <p>
+                Diese Datenschutzerklärung wird bei Bedarf aktualisiert, wenn sich Funktionsumfang oder
+                Datenverarbeitung der Anwendung ändern. Es gilt die jeweils auf dieser Seite
+                veröffentlichte Fassung.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TOS Livestream Automation &middot;
+            <a href="index.html">Startseite</a> &middot;
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        </p>
+    </footer>
+</body>
+</html>

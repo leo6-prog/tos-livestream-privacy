@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TOS Livestream Automation – Automatisierte Planung von YouTube-Livestreams">
+    <meta name="google-site-verification" content="zJ8jVNj1EjMqGjoFwpGFRrcxBdXyZk4Se3TAuiSAbHA">
+    <title>TOS Livestream Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TOS <span>Livestream Automation</span></h1>
+        <nav>
+            <a href="index.html" class="active">Startseite</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Was macht diese App?</h2>
+            <p>
+                Die <strong>TOS Livestream Automation</strong> ist ein internes Automatisierungswerkzeug,
+                das wöchentliche YouTube-Livestreams für unsere Kanäle automatisch anlegt und verwaltet.
+                Die App läuft ausschließlich lokal auf unseren eigenen Rechnern – es gibt keinen
+                öffentlichen Webdienst und keine Registrierung für Dritte.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Funktionen</h2>
+            <ul>
+                <li>Automatisches Erstellen geplanter YouTube-Livestreams (Live-Broadcasts) aus einer Excel-Vorlage</li>
+                <li>Anlegen und Verknüpfen von Live-Streams (Stream-Schlüssel) mit Broadcasts</li>
+                <li>Hochladen von Thumbnails für geplante Sendungen</li>
+                <li>Aktivierung/Deaktivierung des Live-Chats je Sendung</li>
+                <li>Eintragen der erzeugten Video-IDs in eine Google-Sheets-Tabelle zur internen Übersicht</li>
+                <li>Mehrsprachige Sendungen (Deutsch, Englisch, Spanisch, Französisch, Russisch)</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Welche Google-Dienste nutzt die App?</h2>
+            <p>Die App verwendet die folgenden Google-APIs mit den jeweils erforderlichen OAuth-Berechtigungen (Scopes):</p>
+            <ul>
+                <li><strong>YouTube Data API v3</strong> – <code>youtube.force-ssl</code> und <code>youtube.upload</code>:
+                    Verwalten von Live-Broadcasts, Live-Streams und Thumbnails auf unseren eigenen Kanälen</li>
+                <li><strong>Google Sheets API</strong> – <code>spreadsheets</code>:
+                    Schreiben der Video-IDs in unsere eigene, interne Planungstabelle</li>
+            </ul>
+            <p class="muted">
+                Es werden ausschließlich Daten der eigenen YouTube-Kanäle und der eigenen Tabelle verarbeitet.
+                Details findest du in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Für wen ist die App?</h2>
+            <p>
+                Diese Anwendung ist ein <strong>privates, internes Werkzeug</strong> und richtet sich nicht an die
+                Öffentlichkeit. Sie wird ausschließlich vom Betreiber und autorisierten Mitgliedern des
+                TOS-Stream-Teams verwendet.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Kontakt</h2>
+            <p>
+                Bei Fragen zur Anwendung oder zum Datenschutz erreichst du uns unter:<br>
+                <a href="mailto:streamertos@gmail.com">streamertos@gmail.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TOS Livestream Automation &middot;
+            <a href="datenschutz.html">Datenschutz</a> &middot;
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        </p>
+    </footer>
+</body>
+</html>
